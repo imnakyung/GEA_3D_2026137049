@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 450102657708769170}
   - component: {fileID: 7052130093242054015}
   - component: {fileID: 4892809118251635769}
+  - component: {fileID: 675385503711753041}
   m_Layer: 0
   m_Name: EnemyMelee
   m_TagString: Enemy
@@ -70,6 +71,26 @@ MonoBehaviour:
   maxHp: 3
   currentHp: 0
   hpSlider: {fileID: 0}
+  invincibleTime: 0
+  dropPrefab: {fileID: 6437601332035347567, guid: 35640940588639549ad5cae42427839b, type: 3}
+  dropChance: 0.3
+--- !u!114 &675385503711753041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6940060030716987889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a8195e93619de64ea7e64db69287162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyChaser
+  moveSpeed: 2
+  detectRange: 15
+  attackRange: 1.5
+  damage: 1
+  attackCooldown: 1
 --- !u!1001 &2038699928577435327
 PrefabInstance:
   m_ObjectHideFlags: 0
